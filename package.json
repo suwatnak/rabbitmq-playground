@@ -1,0 +1,16 @@
+{
+  "name": "microtopia",
+  "version": "1.0.0",
+  "description": "",
+  "main": "receive.js",
+  "dependencies": {
+    "amqplib": "^0.5.1",
+    "dotenv": "*"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC"
+}

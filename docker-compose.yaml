@@ -1,0 +1,18 @@
+#docker-compose.yaml
+
+version: '2'
+
+services:
+    playground:
+        container_name: nodejs
+        image: node:6.9.5-alpine
+        tty: true
+        volumes:
+            - ".:/usr/app"
+
+    rabbitmq:
+        container_name: rabbitmq
+        image: rabbitmq:management-alpine
+        tty: true
+        ports:
+            - "15672:15672"
