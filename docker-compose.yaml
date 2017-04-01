@@ -8,11 +8,13 @@ services:
         image: node:6.9.5-alpine
         tty: true
         volumes:
-            - ".:/usr/app"
+            - .:/usr/src/app
+
 
     rabbitmq:
-        container_name: rabbitmq
+        container_name: rabbit
         image: rabbitmq:management-alpine
         tty: true
         ports:
             - "15672:15672"
+            - "5672:5672"
